@@ -1,0 +1,107 @@
+.top-nav {
+    margin-top: 24px;
+
+    &__row {
+        padding: 15px 34px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color2;
+        border-radius: 75px;
+    }
+
+    &__col {
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+    }
+
+    &__mobile-burger {
+        display: none;
+        @media (min-width: 480px) and (max-width: 960px) {
+            display: block;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+            display: block;
+        }
+    }
+
+    &__logo {
+        margin-right: 50px;
+        transition: transform 0.2s ease;
+        @media (min-width: 320px) and (max-width: 960px) {
+            margin-right: 0px;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__logo-img {
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        @media (min-width: 320px) and (max-width: 960px) {
+            display: none;
+        }
+    }
+
+    &__menu-item {
+    }
+
+    &__menu-link {
+        padding: 10px;
+        color: $color3;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: $color4;
+        }
+    }
+
+    &__phone {
+        text-decoration: none;
+        color: $color5;
+        font-size: 16px;
+        transition: color 0.2s ease;
+        @media (min-width: 320px) and (max-width: 960px) {
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: $color4;
+        }
+    }
+
+    &__burger {
+    }
+
+    &__burger-icon {
+        width: 15px;
+        height: 15px;
+        rect {
+            transition: transform 0.2s ease;
+        }
+        &.open {
+            rect {
+                &:nth-of-type(1) {
+                    transform: rotate(318deg) translate(-10px, -1px);
+                }
+
+                &:nth-of-type(2) {
+                    display: none;
+                }
+
+                &:nth-of-type(3) {
+                    transform: rotate(37deg) translate(5px, -5px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import "../fonts/Gilroy/stylesheet.css";
+
+@import "./vars";
+@import "./reset";
+@import "./grid";
+
+body {
+    font-family: $font1;
+    font-size: 14px;
+    background-color: $color1;
+    color: $color3;
+}
+
+.block-row {
+    width: 100%;
+}
+
+.btn {
+    padding: 20px 40px;
+    border: none;
+    background-color: $color7;
+    border-radius: 82px;
+    color: $color6;
+
+    display: flex;
+    align-items: center;
+
+    font-family: $font1;
+    font-size: 20px;
+    font-weight: 500;
+    @media (min-width: 320px) and (max-width: 480px) {
+        padding: 10px 45px;
+    }
+}
+
+.btn-orange {
+    background-color: $color4;
+    color: $color6;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+        background-color: $color5;
+    }
+}
+
+.btn-icon {
+    margin-left: 12px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.slider__container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.slider__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.slider__slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+.swiper-container-pointer-events {
+    touch-action: pan-y;
+}
+
+@import "./layouts/top-nav";
+@import "./layouts/hero";
+@import "./layouts/mobile-menu";
+@import "./layouts/triggers";
+@import "./layouts/advantages";
+@import "./layouts/gallery";
+@import "./layouts/popup";
+@import "./layouts/map";
+@import "./layouts/footer";

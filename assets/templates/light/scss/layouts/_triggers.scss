@@ -1,0 +1,76 @@
+.triggers {
+    margin-bottom: 60px;
+
+    &__title {
+        font-size: 46px;
+        margin-bottom: 34px;
+        text-align: center;
+        @media (min-width: 481px) and (max-width: 1200px) {
+            font-size: 32px;
+        }
+        @media (min-width: 320px) and (max-width: 480px) {
+            font-size: 24px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 27px;
+        justify-content: center;
+
+    }
+
+    &__card {
+        padding: 35px;
+        background-color: $color8;
+        border-radius: 30px;
+        width: calc(25% - 27px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 965px) and (max-width: 1200px) {
+            width: calc(40% - 80px);
+        }
+        @media (min-width: 645px) and (max-width: 964px) {
+            width: calc(50% - 20px);
+        }
+        @media (min-width: 481px) and (max-width: 644px) {
+           width: calc(50% - 21px);
+        }
+        @media (min-width: 320px) and (max-width: 480px) {
+           width: calc(50% - 21px);
+        }
+
+    }
+
+    &__icon-wrapper {
+        text-align: center;
+
+
+    }
+
+    &__icon {
+        @media (min-width: 320px) and (max-width: 480px) {
+            width: 40px;
+            height: 40px;
+    
+        }
+    }
+
+    &__card-title {
+        text-align: center;
+        margin: 18px 0px 10px 0px;
+        @media (min-width: 320px) and (max-width: 644px) {
+            font-size: 12px;
+        }
+    }
+
+    &__card-label {
+        text-align: center;
+        @media (min-width: 320px) and (max-width: 644px) {
+            font-size: 9px;
+        }
+    }
+}

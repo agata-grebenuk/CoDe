@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoDe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="./assets/templates/light/css/style.css">
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="block-row top-nav__row">
+                <div class="top-nav__col top-nav__flex">
+                    <a href="#" class="top-nav__logo">
+                        <img src="./assets/templates/light/img/logo.svg" class="top-nav__logo-img"
+                            alt="Школа программирования" title="Школа программирования">
+                    </a>
+                    <ul class="top-nav__menu">
+                        <li class="top-nav__menu-item">
+                            <a href="#" class="top-nav__menu-link">
+                                Чему вы научитесь
+                            </a>
+                        </li>
+                        <li class="top-nav__menu-item">
+                            <a href="#" class="top-nav__menu-link">
+                                Процесс обучения
+                            </a>
+                        </li>
+                        <li class="top-nav__menu-item">
+                            <a href="#" class="top-nav__menu-link">
+                                Стоимость
+                            </a>
+                        </li>
+                        <li class="top-nav__menu-item">
+                            <a href="#" class="top-nav__menu-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-nav__col">
+                    <a href="tel:+74993489396" class="top-nav__phone">
+                        +7 (499) 348 93 96
+                    </a>
+                </div>
+                <div class="top-nav__col top-nav__mobile-burger ">
+                    <div class="top-nav__burger menu-toggle">
+                        <svg width="17" height="14" class="top-nav__burger-icon" viewBox="0 0 17 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="17" height="2" rx="1" fill="#F15525" />
+                            <rect y="6" width="17" height="2" rx="1" fill="#F15525" />
+                            <rect y="12" width="17" height="2" rx="1" fill="#F15525" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="block-row hero__wrapper">
+                <div class="hero__inner">
+                    <div class="slider hero__slider">
+                        <button class="slider__button-prev">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 7C14.5523 7 15 7.44772 15 8C15 8.55228 14.5523 9 14 9L14 7ZM0.292893 8.70711C-0.0976315 8.31658 -0.0976314 7.68342 0.292893 7.29289L6.65685 0.928932C7.04738 0.538407 7.68054 0.538407 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM14 9L1 9L1 7L14 7L14 9Z" fill="#22253B"/>
+                            </svg>
+                        </button>
+                        <button class="slider__button-next">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7C0.447715 7 -4.82823e-08 7.44772 0 8C4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM14.7071 8.70711C15.0976 8.31658 15.0976 7.68342 14.7071 7.29289L8.34315 0.928932C7.95262 0.538407 7.31946 0.538407 6.92893 0.928932C6.53841 1.31946 6.53841 1.95262 6.92893 2.34315L12.5858 8L6.92893 13.6569C6.53841 14.0474 6.53841 14.6805 6.92893 15.0711C7.31946 15.4616 7.95262 15.4616 8.34315 15.0711L14.7071 8.70711ZM1 9L14 9L14 7L1 7L1 9Z" fill="#22253B"/>
+                            </svg>
+                        </button>
+                        <div class="slider__container">
+                            <div class="slider__wrapper">
+                                <div class="slider__slide hero__slide">
+                                    <div class="hero__slide-col">
+                                        <h2 class="hero__slide-title">
+                                            Школа <span class="hero__slide-title--orange">{</span><span
+                                                class="hero__slide-title--bold">программирования</span><span
+                                                class="hero__slide-title--orange">}</span>
+                                            для тех,
+                                            кому нужны реальные навыки,
+                                            а не просто сертификат
+                                        </h2>
+                                        <div class="hero__slide-delimer"></div>
+                                        <div class="hero__slide-label">
+                                            Закажите звонок, и наш специалист свяжется с вами в ближайшее время
+                                        </div>
+                                        <button type="button" class="btn btn-orange hero__slide-btn popup-link">
+                                            Заказать звонок
+                                            <svg width="16" height="16" viewBox="0 0 16 16" class="btn-icon" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.00188 13.5151C0.611353 13.9056 0.611353 14.5388 1.00188 14.9293C1.3924 15.3198 2.02557 15.3198 2.41609 14.9293L1.00188 13.5151ZM15.709 1.2222C15.709 0.669913 15.2613 0.222198 14.709 0.222198L5.70898 0.222198C5.1567 0.222198 4.70898 0.669914 4.70898 1.2222C4.70899 1.77448 5.1567 2.2222 5.70898 2.2222L13.709 2.2222L13.709 10.2222C13.709 10.7745 14.1567 11.2222 14.709 11.2222C15.2613 11.2222 15.709 10.7745 15.709 10.2222L15.709 1.2222ZM2.41609 14.9293L15.4161 1.9293L14.0019 0.515091L1.00188 13.5151L2.41609 14.9293Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="hero__slide-col hero__slide-col-img">
+                                        <img src="./assets/templates/light/img/slider/illustration-slide-1.png"
+                                            class="hero__slide-col-illustration" alt="Описание изображения"
+                                            title="Описание изображения">
+
+                                    </div>
+                                </div>
+                                <div class="slider__slide hero__slide">
+                                    <div class="hero__slide-col">
+                                        <h2 class="hero__slide-title">
+                                        Обучение через практику 
+                                        </h2>
+                                        <div class="hero__slide-delimer"></div>
+                                        <div class="hero__slide-label">
+                                            Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.
+                                        </div>
+                                        <button type="button" class="btn btn-orange hero__slide-btn">
+                                            Заказать звонок
+                                            <svg width="16" height="16" viewBox="0 0 16 16" class="btn-icon" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.00188 13.5151C0.611353 13.9056 0.611353 14.5388 1.00188 14.9293C1.3924 15.3198 2.02557 15.3198 2.41609 14.9293L1.00188 13.5151ZM15.709 1.2222C15.709 0.669913 15.2613 0.222198 14.709 0.222198L5.70898 0.222198C5.1567 0.222198 4.70898 0.669914 4.70898 1.2222C4.70899 1.77448 5.1567 2.2222 5.70898 2.2222L13.709 2.2222L13.709 10.2222C13.709 10.7745 14.1567 11.2222 14.709 11.2222C15.2613 11.2222 15.709 10.7745 15.709 10.2222L15.709 1.2222ZM2.41609 14.9293L15.4161 1.9293L14.0019 0.515091L1.00188 13.5151L2.41609 14.9293Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="hero__slide-col hero__slide-col-img">
+                                        <img src="./assets/templates/light/img/slider/illustration-slide-2.png"
+                                            class="hero__slide-col-illustration" alt="Описание изображения"
+                                            title="Описание изображения">
+                                    </div>
+                                </div>
+
+                                <div class="slider__slide hero__slide">
+                                    <div class="hero__slide-col">
+                                        <h2 class="hero__slide-title">
+                                            Весь материал разбит на небольшие уроки
+                                        </h2>
+                                        <div class="hero__slide-delimer"></div>
+                                        <div class="hero__slide-label">
+                                            Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.
+                                        </div>
+                                        <button type="button" class="btn btn-orange hero__slide-btn">
+                                            Заказать звонок
+                                            <svg width="16" height="16" viewBox="0 0 16 16" class="btn-icon" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.00188 13.5151C0.611353 13.9056 0.611353 14.5388 1.00188 14.9293C1.3924 15.3198 2.02557 15.3198 2.41609 14.9293L1.00188 13.5151ZM15.709 1.2222C15.709 0.669913 15.2613 0.222198 14.709 0.222198L5.70898 0.222198C5.1567 0.222198 4.70898 0.669914 4.70898 1.2222C4.70899 1.77448 5.1567 2.2222 5.70898 2.2222L13.709 2.2222L13.709 10.2222C13.709 10.7745 14.1567 11.2222 14.709 11.2222C15.2613 11.2222 15.709 10.7745 15.709 10.2222L15.709 1.2222ZM2.41609 14.9293L15.4161 1.9293L14.0019 0.515091L1.00188 13.5151L2.41609 14.9293Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="hero__slide-col hero__slide-col-img">
+                                        <img src="./assets/templates/light/img/slider/illustration-slide-3.png"
+                                            class="hero__slide-col-illustration" alt="Описание изображения"
+                                            title="Описание изображения">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__bg-elipses">
+                    <div class="hero__bg-elipse">
+                        <img src="./assets/templates/light/img/bg-elipse.png" alt="">
+                    </div>
+                    <div class="hero__bg-elipse">\
+                        <img src="./assets/templates/light/img/bg-elipse.png" alt="">
+                    </div>
+                    <div class="hero__bg-elipse">
+                        <img src="./assets/templates/light/img/bg-elipse.png" alt="">
+                    </div>
+                    <div class="hero__bg-elipse">
+                        <img src="./assets/templates/light/img/bg-elipse.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="triggers">
+            <div class="container">
+                <div class="block-row">
+                    <h2 class="triggers__title">
+                        Обучение в CoDe – это<br>
+                        удобно и результативно
+                    </h2>
+
+                    <div class="triggers__cards">
+                        <div class="triggers__card">
+                            <div class="triggers__icon-wrapper">
+                                <img src="./assets/templates/light/img/triggers/trigger-icon-1.png"
+                                    class="triggers__icon" alt="Огромное количество практики"
+                                    title="Огромное количество практики">
+                            </div>
+                            <div class="triggers__card-title">
+                                Огромное количество практики
+                            </div>
+                            <div class="triggers__card-label">
+                                Более 500 самостоятельных заданий и 20 полноценных больших проектов
+                            </div>
+                        </div>
+                        <div class="triggers__card">
+                            <div class="triggers__icon-wrapper">
+                                <img src="./assets/templates/light/img/triggers/trigger-icon-2.png"
+                                    class="triggers__icon" alt="Огромное количество практики"
+                                    title="Огромное количество практики">
+                            </div>
+                            <div class="triggers__card-title">
+                                Современные методики обучения
+                            </div>
+                            <div class="triggers__card-label">
+                                Спиральное обучение: погружаемся в материал постепенно, виток за витком
+                            </div>
+                        </div>
+                        <div class="triggers__card">
+                            <div class="triggers__icon-wrapper">
+                                <img src="./assets/templates/light/img/triggers/trigger-icon-3.png"
+                                    class="triggers__icon" alt="Огромное количество практики"
+                                    title="Огромное количество практики">
+                            </div>
+                            <div class="triggers__card-title">
+                                Простое и понятное изложение
+                            </div>
+                            <div class="triggers__card-label">
+                                Вместо заумных терминов – примеры из реального мира
+                            </div>
+                        </div>
+                        <div class="triggers__card">
+                            <div class="triggers__icon-wrapper">
+                                <img src="./assets/templates/light/img/triggers/trigger-icon-4.png"
+                                    class="triggers__icon" alt="Огромное количество практики"
+                                    title="Огромное количество практики">
+                            </div>
+                            <div class="triggers__card-title">
+                                Гибкий график занятий
+                            </div>
+                            <div class="triggers__card-label">
+                                Учитесь в любое время в удобном для вас темпе
+                            </div>
+                        </div>
+                        <div class="triggers__card">
+                            <div class="triggers__icon-wrapper">
+                                <img src="./assets/templates/light/img/triggers/trigger-icon-5.png"
+                                    class="triggers__icon" alt="Огромное количество практики"
+                                    title="Огромное количество практики">
+                            </div>
+                            <div class="triggers__card-title">
+                                Прямая связь с опытными программистами
+                            </div>
+                            <div class="triggers__card-label">
+                                Задавайте вопросы и отправляйте свой код на проверку
+                            </div>
+                        </div>
+                        <div class="triggers__card">
+                            <div class="triggers__icon-wrapper">
+                                <img src="./assets/templates/light/img/triggers/trigger-icon-6.png"
+                                    class="triggers__icon" alt="Огромное количество практики"
+                                    title="Огромное количество практики">
+                            </div>
+                            <div class="triggers__card-title">
+                                Оплата небольшими частями
+                            </div>
+                            <div class="triggers__card-label">
+                                Платите только за тот материал, который сейчас изучаете, а не за весь курс сразу
+                            </div>
+                        </div>
+                        <div class="triggers__card">
+                            <div class="triggers__icon-wrapper">
+                                <img src="./assets/templates/light/img/triggers/trigger-icon-7.png"
+                                    class="triggers__icon" alt="Огромное количество практики"
+                                    title="Огромное количество практики">
+                            </div>
+                            <div class="triggers__card-title">
+                                Быстрый и легкий возврат
+                            </div>
+                            <div class="triggers__card-label">
+                                Если передумаете учиться – вернем деньги за 3 рабочих дня                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <div class="block-row">
+                    <div class="advantages__row">
+                        <div class="advantages__col advantages__img">
+                            <img src="./assets/templates/light/img/advantages/advantage1.jpg" alt="">
+                        </div>
+                        <div class="advantages__col advantages__content">
+                            <h2 class="advantages__title">
+                                Помощь и поддержка
+                            </h2>
+                            <div class="advantages__text">
+                                <p>
+                                    Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему
+                                    наставнику.
+                                </p>
+                                <p>
+                                    Раз в несколько уроков вы будете получать большое задание, которое нужно будет
+                                    сдавать на проверку код-ревьюеру. Он
+                                    внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages__row">
+                        <div class="advantages__col advantages__img">
+                            <img src="./assets/templates/light/img/advantages/advantage2.jpg" alt="">
+                        </div>
+                        <div class="advantages__col advantages__content">
+                            <h2 class="advantages__title">
+                                Методика обучения
+                            </h2>
+                            <div class="advantages__text">
+                                <p>
+                                    Весь учебный материал структурирован по принципу «спирального обучения». Сначала вы
+                                    получаете базовые знания, а затем на
+                                    каждом витке спирали углубляетесь в изученные темы, доводя их понимание до
+                                    совершенства. Такой подход упрощает обучение
+                                    и гарантирует, что вы не пропустите ничего важного.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <div class="gallery">
+            <div class="container">
+                <div class="block-row gallery__wrapper">
+                    <a href="./assets/templates/light/img/gallery/people-talking.png" class="gallery__item"
+                        data-fancybox="gallery">
+                        <img src="./assets/templates/light/img/gallery/people-talking.png" alt="">
+                    </a>
+                    <a href="./assets/templates/light/img/gallery/program-languages.png" class="gallery__item"
+                        data-fancybox="gallery">
+                        <img src="./assets/templates/light/img/gallery/program-languages.png" alt="">
+                    </a>
+                    <a href="./assets/templates/light/img/gallery/laptop-one.png" class="gallery__item"
+                        data-fancybox="gallery">
+                        <img src="./assets/templates/light/img/gallery/laptop-one.png" alt="">
+                    </a>
+                    <a href="./assets/templates/light/img/gallery/laptop-two.png" class="gallery__item"
+                        data-fancybox="gallery">
+                        <img src="./assets/templates/light/img/gallery/laptop-two.png" alt="">
+                    </a>
+                    <a href="./assets/templates/light/img/gallery/boy.png" class="gallery__item"
+                        data-fancybox="gallery">
+                        <img src="./assets/templates/light/img/gallery/boy.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="map">
+            <div class="container">
+                <div class="block-row map__render" id="map"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="block-row">
+                <div class="footer__top">
+                    <div class="footer__top-left">
+                        <div class="footer__designation">
+                            <a href="#" class="footer__designation-logo">
+                                <img src="./assets/templates/light/img/logo.svg" alt="logo" title="logo">
+                            </a>
+                            <p class="footer__designation-text">Школа программирования</p>
+                        </div>
+                        <div class="footer__socials">
+                            <a href="#" class="footer__social" target="_blank">
+                                <img src="./assets/templates/light/img/icons/socials/insta.svg" alt="instagram"
+                                    title="instagram">
+                            </a>
+                            <a href="#" class="footer__social" target="_blank">
+                                <img src="./assets/templates/light/img/icons/socials/vk.svg" alt="vk" title="vk">
+                            </a>
+                            <a href="#" class="footer__social" target="_blank">
+                                <img src="./assets/templates/light/img/icons/socials/facebook.svg" alt="facebook"
+                                    title="facebook">
+                            </a>
+                            <a href="#" class="footer__social" target="_blank">
+                                <img src="./assets/templates/light/img/icons/socials/youtube.svg" alt="youtube"
+                                    title="youtube">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__top-right">
+                        <div class="footer__top-right-links">
+                            <a href="#" class="footer__top-right-link">
+                                Чему вы научитесь
+                            </a>
+                            <a href="#" class="footer__top-right-link">
+                                Процесс обучения
+                            </a>
+                            <a href="#" class="footer__top-right-link">
+                                Стоимость
+                            </a>
+                            <a href="#" class="footer__top-right-link">
+                                Контакты
+                            </a>
+                            <a href="#" class="footer__top-right-link">
+                                Регистрация
+                            </a>
+                        </div>
+                        <div class="footer__right-connection">
+                            <a href="tel:+74993489396" class="footer__right-connection--phone" target="_blank">
+                                +7 (499) 348 93 96
+                            </a>
+                            <a href="#" class="footer__right-connection--email" target="_blank">
+                                info@code.ru
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__delimer"></div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-col">
+                        © 2023 — Все права защищены
+                    </div>
+                    <div class="footer__bottom-col">
+                        <div class="footer__bottom-links">
+                            <a href="#" class="footer__bottom-link">
+                                Пользовательское соглашение
+                            </a>
+                            <a href="#" class="footer__bottom-link">
+                                Политика конфиденциальности
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="popup" class="popup close-popup">
+            <div class="popup__body">
+                <div href="" class="popup__content">
+                    <div class="popup__title">Заказать звонок</div>
+                    <div class="popup__record">
+                        <h2 class="popup__text">Имя</h2>
+                        <input class="popup__input" type="text" placeholder="Ваше имя"></input>
+                    </div>
+                    <div class="popup__record">
+                        <h2 class="popup__text">Телефон</h2>
+                        <input class="popup__input" type="number" placeholder="+7 ХХХ - ХХХ - ХХ -ХХ"></input>
+                    </div>
+                    <div class="popup__record">
+                        <h2 class="popup__text">Email</h2>
+                        <input class="popup__input" type="email" placeholder="mail@site.com"></input>
+                    </div>
+                    <div class="popup__record">
+                        <h2 class="popup__text">Сообщение</h2>
+                        <input class="popup__input" type="text" placeholder="Ваше сообщение ..."></input>
+                    </div>
+                    <div class="popup__politics">
+                        <p>Нажимая кнопку “Отправить”, соглашаюсь с <span>политикой конфидениальности</span></p>
+                        <div class="repeated__btn btn btn-orange">
+                            Отправить
+                            <img src="./assets/templates/light/img/icons/arrow-up-right.svg" alt="" srcset="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="block-row mobile-menu__wrapper">
+                <div class="mobile-menu__close menu-toggle">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="mobile-menu__close-icon">
+                        <rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC"/>
+                        <rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC"/>
+                    </svg>
+                </div>
+                <ul class="mobile-menu__links">
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Чему вы научитесь</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Процесс обучения</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Стоимость</a>
+                    </li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">
+                        Контакты</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <script src="./assets/templates/light/js/plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=68ee7fd5-2d61-41d6-831c-ec3e4adc9dc5&lang=ru_RU"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./assets/templates/light/js/scripts.js"></script>
+    <script src="./assets/templates/light/js/burger.js"></script>
+</body>
+
+</html>
